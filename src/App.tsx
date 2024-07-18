@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import MuiSelect from "./components/MuiSelect";
+import { MuiTextField } from "./components/MuiTextField";
+import { MuiButton } from "./components/MuiButton";
+import { MuiTypography } from "./components/MuiTypography";
+import MuiRadio from "./components/MuiRadio";
+import UnoptimizedExpensiveCalculation from "./components/UnoptimizedExpensiveCalculation";
+import OptimizedExpensiveCalculation from "./components/OptimizedExpensiveCalculation";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MuiTypography />
+      <MuiButton />
+      <MuiTextField />
+      <MuiRadio />
+      <MuiSelect />
+      <UnoptimizedExpensiveCalculation />
+      <OptimizedExpensiveCalculation />
     </div>
   );
 }
